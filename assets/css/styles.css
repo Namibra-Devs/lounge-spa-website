@@ -449,6 +449,12 @@ body {
     .book-text p {
         font-size: 15px;
     }
+    .second{
+        width: 100%;
+    }
+    .fourth{
+        width: 100%;
+    }
 }
 
 /* Location Section--- */
