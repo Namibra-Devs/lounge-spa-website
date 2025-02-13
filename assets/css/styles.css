@@ -450,3 +450,33 @@ body {
         font-size: 15px;
     }
 }
+
+/* Location Section--- */
+.location-box i {
+    font-size: 2rem;
+    color: #e04e52;
+    margin-bottom: 10px;
+}
+
+.location-box h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.location-box p {
+    font-size: 1rem;
+}
+
+.location-box a {
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.location-box a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
