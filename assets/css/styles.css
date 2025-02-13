@@ -1,0 +1,95 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    scroll-behavior: smooth;
+    text-decoration: none;
+  }
+  
+body {
+    font-family: 'Noto Serif JP', serif;
+   
+  }
+
+  /* Header Section------ */
+  .header-section {
+    background: url('/assets/images/spa-home.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.header-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.header-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.header-content h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 67.2px;
+}
+
+.header-content h4 {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 36px;
+}
+
+.book-now {
+    display: inline-block;
+    width: 175;
+    height: 64;
+    top: 423px;
+    left: 632.5px;
+    gap: 10px;
+    border-radius: 45px;
+    padding-top: 20px;
+    padding-right: 36px;
+    padding-bottom: 20px;
+    padding-left: 36px;
+    color: #222222;
+    text-decoration: none;
+    font-size: 1.2rem;
+    line-height: 24px;
+    font-weight: 400;
+background-color: #FFFFFF;    
+    transition: 0.3s ease;
+    
+}
+
+.book-now:hover {
+    background: #e04e52;
+    color: #ffffff;
+}
+
+/* Mobile View */
+@media (max-width: 998px) {
+    .header-content h1 {
+        font-size: 1.6rem;
+    }
+
+    .header-content h4 {
+        font-size: 1.2rem;
+    }
+
+    .book-now {
+        font-size: 1rem;
+     
+    }
+}
