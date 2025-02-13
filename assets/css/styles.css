@@ -514,3 +514,26 @@ body {
     
 }
 
+/* Booking Page------- */
+.form-check-input:checked {
+  background-color: #e04e52; 
+  border-color: #fff;
+}
+.book-btn{
+border-radius: 8px;
+background-color: #f50b7e;
+color: #ffffff;
+font-family: Noto Serif JP;
+font-weight: 700;
+font-size: 30px;
+line-height: 26px;
+letter-spacing: 0%;
+padding: 15px 0px;
+transition: 0.3s ease;
+
+}
+.book-btn:hover{
+  background-color: #ffffff;
+  border: 1px solid #f50b7e;
+  color: #f50b7e;
+}
