@@ -10,7 +10,18 @@
 body {
   font-family: "Noto Serif JP", serif;
 }
-
+/* Scrollbar------------- */
+::-webkit-scrollbar {
+  height: 0;
+  width: 0.5rem;
+}
+::-webkit-scrollbar-track {
+  background: #f8f9fa;
+}
+::-webkit-scrollbar-thumb {
+  background: #e04e52;
+  border-radius: 5rem;
+}
 /* Header Section------ */
 .header-section {
   background: url("/assets/images/spa-home.jpg") no-repeat center center/cover;
@@ -455,6 +466,9 @@ body {
     .fourth{
         width: 100%;
     }
+    .footer p{
+      font-size: 1.1rem;
+    }
 }
 
 /* Location Section--- */
@@ -475,14 +489,14 @@ body {
 
 .location-box a {
     display: inline-block;
-    margin-top: 5px;
+ 
     font-weight: bold;
-    color: #007bff;
+    color: #454545;
     text-decoration: none;
 }
 
 .location-box a:hover {
-    color: #0056b3;
+    color: #F50B7E;
     text-decoration: underline;
 }
 
