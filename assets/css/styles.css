@@ -515,6 +515,9 @@ body {
 }
 
 /* Booking Page------- */
+.booking-container h2{
+  color: #f50b7e;
+}
 .form-check-input:checked {
   background-color: #e04e52; 
   border-color: #fff;

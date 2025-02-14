@@ -4,13 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booking Page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
 <body>
     <div class="container-fluid">
         <div class="row booking-container d-flex flex-column flex-md-row">
-            <div class="col-12 col-md-6 text-center p-3">
+            <div class="col-12 col-md-6 text-center p-3" data-aos="flip-right"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="1500">
                 <img src="/assets/images/booking.png" alt="Booking Image" class="img-fluid w-100">
             </div>
             <div class="col-12 col-md-6 p-5">
@@ -19,44 +25,60 @@
                 <h5 class="text-secondary">Please fill in your details</h5>
                 
                 <form>
-                    <div class="row mb-3">
+                    <div class="row mb-3" data-aos="fade-up"
+                    data-aos-easing="ease-in-sine"
+                    data-aos-duration="1000">
                         <div class="col-md-6">
                             <label for="firstName" class="form-label">First Name*</label>
-                            <input type="text" id="firstName" class="form-control" placeholder="Enter First Name..." required>
+                            <input type="text" id="firstName" class="form-control mb-3" placeholder="Enter First Name..." required>
                         </div>
                         <div class="col-md-6">
                             <label for="lastName" class="form-label">Last Name*</label>
                             <input type="text" id="lastName" class="form-control" placeholder="Enter Last Name..." required>
                         </div>
                     </div>
-                    <div class="mb-3">
+                    <div class="mb-3" data-aos="fade-up"
+                    data-aos-easing="ease-in-sine"
+                    data-aos-duration="1000">
                         <label for="email" class="form-label">Email*</label>
                         <input type="email" id="email" class="form-control" placeholder="Enter Email..." required>
                     </div>
-                    <div class="mb-3">
+                    <div class="mb-3" data-aos="fade-up"
+                    data-aos-easing="ease-in-sine"
+                    data-aos-duration="1000">
                         <label for="mobile" class="form-label">Mobile Number*</label>
                         <input type="tel" id="mobile" class="form-control" placeholder="Enter Mobile Number..." required>
                     </div>
-                    <div class="row mb-3">
+                    <div class="row mb-3" data-aos="fade-up"
+                    data-aos-easing="ease-in-sine"
+                    data-aos-duration="1000">
                         <div class="col-md-6">
                             <label for="date" class="form-label">Date*</label>
-                            <input type="date" id="date" class="form-control" required>
+                            <input type="date" id="date" class="form-control mb-3" required>
                         </div>
                         <div class="col-md-6">
                             <label for="time" class="form-label">Time*</label>
                             <input type="time" id="time" class="form-control" required>
                         </div>
                     </div>
-                    <p class="text-muted">Who are you booking for? (optional)</p>
-                    <div class="form-check">
+                    <p class="text-muted" data-aos="fade-up"
+                    data-aos-easing="ease-in-sine"
+                    data-aos-duration="1000">Who are you booking for? (optional)</p>
+                    <div class="form-check" data-aos="fade-up"
+                    data-aos-easing="ease-in-sine"
+                    data-aos-duration="1000">
                         <input class="form-check-input" type="radio" name="booking-option" id="option1" required>
                         <label class="form-check-label" for="option1">I am the main guest</label>
                     </div>
-                    <div class="form-check mb-4">
+                    <div class="form-check mb-4" data-aos="fade-up"
+                    data-aos-easing="ease-in-sine"
+                    data-aos-duration="1000">
                         <input class="form-check-input" type="radio" name="booking-option" id="option2" required>
                         <label class="form-check-label" for="option2">I am the main guest</label>
                     </div>
-                    <button type="button" class="btn book-btn w-100" data-bs-toggle="modal" data-bs-target="#bookingModal">Book Now</button>
+                    <button type="button" class="btn book-btn w-100" data-bs-toggle="modal" data-bs-target="#bookingModal" data-aos="fade-up"
+                    data-aos-easing="ease-in-sine"
+                    data-aos-duration="1000">Book Now</button>
                 </form>
             </div>
         </div>
@@ -64,7 +86,7 @@
 
      <!-- Booking Confirmation Modal -->
      <div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="bookingModalLabel">Booking Confirmation</h5>
@@ -81,6 +103,17 @@
         </div>
     </div>
 
+    <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="https://kit.fontawesome.com/YOUR_FONT_AWESOME_KIT.js" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+      });
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
